@@ -3,7 +3,7 @@
 Azure AI Search와 OpenAI를 활용한 지능형 RFP(제안요청서) 분석 도구입니다.
 
 ## 🎯 개발 목적
-
+- **URL**: hyh-web-0916-b4a5bzg3eaadaqh5.swedencentral-01.azurewebsites.net
 - **RFP 문서 자동 분석**: PDF, DOCX, TXT 형식의 RFP 문서를 자동으로 분석하여 구조화된 정보를 추출
 - **지능형 질의응답**: RFP 내용에 대한 자연어 질문에 정확한 답변 제공
 - **유사 RFP 검색**: 벡터 검색을 통한 유사한 RFP 문서 검색 및 참고
