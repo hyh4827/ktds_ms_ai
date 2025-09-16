@@ -3,15 +3,15 @@
 Azure AI Search와 OpenAI를 활용한 지능형 RFP(제안요청서) 분석 도구입니다.
 
 ## 🎯 개발 목적
-- **URL**: hyh-web-0916-b4a5bzg3eaadaqh5.swedencentral-01.azurewebsites.net
-- **RFP 문서 자동 분석**: PDF, DOCX, TXT 형식의 RFP 문서를 자동으로 분석하여 구조화된 정보를 추출
+- **Azure URL**: hyh-web-0916-b4a5bzg3eaadaqh5.swedencentral-01.azurewebsites.net
+- **RFP 문서 자동 분석**: RFP 문서를 자동으로 분석하여 구조화된 정보를 추출
 - **지능형 질의응답**: RFP 내용에 대한 자연어 질문에 정확한 답변 제공
 - **유사 RFP 검색**: 벡터 검색을 통한 유사한 RFP 문서 검색 및 참고
 
 ## ✨ 주요 기능
 
 ### 1. 📄 RFP 파일 분석
-- **다양한 파일 형식 지원**: PDF, DOCX, TXT 파일 업로드 및 텍스트 추출
+- **텍스트 추출**: PDF 파일 업로드 및 텍스트 추출
 - **11개 카테고리별 구조화된 분석**:
   - 핵심 개요 (배경목적, 범위, 기대성과, 용어정의, 이해관계자)
   - 일정·마일스톤 (사업기간, 주요마일스톤, 제출물일정, 질의응답마감)
@@ -57,10 +57,6 @@ Azure AI Search와 OpenAI를 활용한 지능형 RFP(제안요청서) 분석 도
 git clone <repository-url>
 cd ktds_ai
 
-# 가상환경 생성 및 활성화
-python -m venv venv
-source venv/bin/activate  # Windows: venv\Scripts\activate
-
 # 의존성 설치
 pip install -r requirements.txt
 ```
@@ -86,9 +82,6 @@ AZURE_OPENAI_API_VERSION=2024-12-01-preview
 ```bash
 # Streamlit 웹 애플리케이션 실행
 streamlit run app.py
-
-# 또는 콘솔 애플리케이션 실행
-python main.py
 ```
 
 ## 🚀 사용법
@@ -115,10 +108,6 @@ python main.py
 
 ### 콘솔 애플리케이션
 
-```bash
-python main.py
-```
-
 1. Azure 서비스 설정 정보 입력
 2. 메뉴에서 원하는 기능 선택:
    - RFP 파일 분석
@@ -130,9 +119,7 @@ python main.py
 ```
 ktds_ai/
 ├── app.py                 # Streamlit 웹 애플리케이션
-├── main.py               # 콘솔 애플리케이션
 ├── rfp_analyzer.py       # RFP 분석 핵심 로직
-├── sample.py             # 샘플 코드
 ├── requirements.txt      # Python 의존성
 ├── streamlit.sh         # Streamlit 실행 스크립트
 ├── sample.txt           # 샘플 텍스트 파일
